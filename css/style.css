@@ -1,0 +1,189 @@
+body {
+	margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#demo-container {
+	text-align: center;
+	margin: 40px auto;
+}
+
+#file-input-label {
+	width: 220px;
+	cursor: pointer;
+	background-color: #6351ce;
+	color: white;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 8px;
+	font-weight: 500;
+}
+
+#file-input {
+	display: none;
+}
+
+#file-progress-container {
+	display: none;
+	margin: 15px 0 0 0;
+}
+
+#contents {
+	margin: 15px 0 0 0;
+	display: none;
+	text-align: left;
+	background-color: rgba(0,0,0,0.1);
+	padding: 10px;
+	font-size: 13px;
+	max-height: 300px;
+	overflow: auto;
+}
+
+#notice {
+	display: none;
+	text-align: center;
+	color: green;
+	font-weight: bold;
+}
+
+.fName {
+	font-weight: bold;
+}
+
+#btnAp:hover {
+	background-color: red;
+}
+
+.btnn, .btnn1 {
+	width: 120px;
+	margin: 8px;
+	position: relative;
+	display: inline-block;
+}
+
+.btnn .tooltiptext, #btnAp .tooltiptext, .btnn1 .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: green;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.btnn .tooltiptext, #btnAp .tooltiptext {
+	bottom: 150%;
+}
+
+.btnn .tooltiptext::after, #btnAp .tooltiptext::after, .btnn1 .tooltiptext::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: green transparent transparent transparent;
+}
+
+.btnn .tooltiptext::after, #btnAp .tooltiptext::after {
+	top: 100%;
+}
+
+#btnAp .tooltiptext {
+	background-color: red;
+}
+
+#btnAp .tooltiptext::after {
+	border-color: red transparent transparent transparent;
+}
+
+.btnn1 .tooltiptext {
+	background-color: #6351ce;
+	top: 120%;
+}
+
+.btnn1 .tooltiptext::after {
+	bottom: 100%;
+	border-color: transparent transparent #6351ce transparent;
+}
+
+.btnn:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+#btnAp:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.btnn1:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+/*
+.jumbotron {
+	display: flex;
+	align-items: center;
+	height: 350px;
+	background-image: url("src/img/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+  	align-items: center;
+}
+
+.jumbotron .text {
+	transform: translate(-50%, -50%);
+	align-items: center;
+}
+
+section.container .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	transform: translate(-50%, -50%);
+}	
+
+body {
+	align-items: center;
+	height: 1000px;
+	background-image: url("src/img/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 60%;
+}
+*/
+.jumbotron {
+	align-items: center;
+	/*height: 300px;*/
+	justify-content: center;
+	background-image: url("../src/img/bg.jpg");
+	background-size: cover;
+	background-position: center;
+	vertical-align: middle;
+}
+.jumbotron h1 {
+	background-color: #FFFFFF;
+	display: inline-block;
+	color: #F06529;
+	font-weight: 700;
+	padding: 10px 35px;
+	border-radius: 5px;
+}	
+.jumbotron h3 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
