@@ -13,9 +13,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="./js/countdown.js"></script>
 </head>
 
-<body>
+<body onload="showCountDown()">
 	<div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
 		<h1 class="text">Welcome To Branium Academy</h1>
 		<h3 class="text">Some new products coming soon!</h3>
@@ -71,6 +72,7 @@
 						<a class="dropdown-item" href="#">Unity Game</a>
 						<a class="dropdown-item" href="#">Phaser 2D Game</a>
 						<a class="dropdown-item" href="#">Data Structure Algorithm</a>
+						<a class="dropdown-item" href="#">...</a>
 					</div>
 				</li>
 			</ul>
@@ -91,11 +93,11 @@
 			<span id="file-progress-percent"></span>% read
 		</div>
 	</div>
-	
+
 	<div class="container pt-3">
-		<h1 style="text-align: center;">New plroduct will release at 7/7/2020</h1>
+		<h1 style="text-align: center;">New product will release at 7/7/2020</h1>
 		<img class="mx-auto d-block rounded" style="width: 70%;" src="./src/img/bg.jpg" alt="background image">
-		<h1 style="text-align: center;">...</h1>
+		<h1 id="countdown" style="text-align: center;"></h1>
 	</div>
 
 	<footer class="page-footer font-small unique-color-dark">
